@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    gap: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    background-color: lightblue;
+    margin: 200px auto;
+    border-radius: 10px;
+}
+.display{
+    background-color: white;
+    text-align: right;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.buttons button{
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
