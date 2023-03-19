@@ -9,7 +9,11 @@
 body {
   padding: 0;
   margin: 0;
-  background: lightblue;
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 121, 1) 33%,
+    rgba(4, 121, 195, 1) 100%
+  );
 }
 
 .calculator-grid {
@@ -37,7 +41,7 @@ body {
   grid-column: span 2;
 }
 
-.output {
+.display {
   grid-column: 1 / -1;
   background-color: rgba(0, 0, 0, 0.75);
   display: flex;
@@ -49,12 +53,12 @@ body {
   word-break: break-all;
 }
 
-.output .previous-operand {
+.display .previous-operand {
   color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
 }
 
-.output .current-operand {
+.display .current-operand {
   color: white;
   font-size: 2.5rem;
 }
