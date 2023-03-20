@@ -83,7 +83,7 @@ class Calculator {
 
   //Função para limpar o display
   clear() {
-    this.prevOperand = "";
+    this.prevOperand = ""; //Basicamente, prevOperandText seria a Div em si, tirada do HTML, e prevOperand seria o valor dentro dessa div(sendo esse valor que será manipulado para mostrar no display).
     this.currentOperand = "";
     this.operation = undefined;
   }
